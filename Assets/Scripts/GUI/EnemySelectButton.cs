@@ -12,8 +12,14 @@ public class EnemySelectButton : MonoBehaviour
         GameObject.Find("BattleManager").GetComponent<BattleStateMachine>().Input2(EnemyPrefab);
     }
 
-
-
+    public void HideSelector()
+    {
+        EnemyPrefab.transform.Find("Selector").gameObject.SetActive(false);  
+    }
+    public void ShowSelector()
+    {
+        EnemyPrefab.transform.Find("Selector").gameObject.SetActive(true);    
+    }
 
 
 }

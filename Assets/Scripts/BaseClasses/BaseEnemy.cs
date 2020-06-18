@@ -3,10 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class BaseEnemy
+public class BaseEnemy : BaseUnit
 {
-    public string name;
-
     public enum Type
     {
         GRASS,
@@ -25,14 +23,4 @@ public class BaseEnemy
 
     public Type EnemyType;
     public Rarity rarity;
-
-    public float baseHP;
-    public float curHP;
-    public float baseMP;
-    public float curMP;
-
-    public float baseATK;
-    public float curATK;
-    public float baseDEF;
-    public float curDEF;
 }

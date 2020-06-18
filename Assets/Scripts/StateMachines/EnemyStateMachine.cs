@@ -30,11 +30,13 @@ public class EnemyStateMachine : MonoBehaviour
     public GameObject HeroToAttack;
     private float animSpeed = 10f;
 
+    public GameObject Selector;
 
     // Start is called before the first frame update
     void Start()
     {
         currentState = TurnState.PROCESSING;
+        Selector.SetActive(false);
         BSM = GameObject.Find("BattleManager").GetComponent<BattleStateMachine>();
         startPosition = transform.position;
 
@@ -94,10 +96,14 @@ public class EnemyStateMachine : MonoBehaviour
     void ChooseAction()
     {
         HandleTurn myAttack = new HandleTurn();
-        myAttack.Attacker = enemy.name;
+        myAttack.Attacker = enemy.theName;
         myAttack.Type = "Enemy";
         myAttack.AttackersGameObject = this.gameObject;
         myAttack.AttackersTarget = BSM.HerosInBattle[Random.Range(0,BSM.HerosInBattle.Count)];
+
+        int num = Random.Range(0,enemy.attacks.Count);
+        myAttack.chosenAttack = enemy.attacks[num];
+
         BSM.CollectActions(myAttack);
     }
 
@@ -116,6 +122,8 @@ public class EnemyStateMachine : MonoBehaviour
         }
 
         yield return new WaitForSeconds(0.5f);
+        
+        DoDamage();
 
         Vector3 firstPosition = startPosition;
         while(MoveTowardsStart(firstPosition))
@@ -141,5 +149,10 @@ public class EnemyStateMachine : MonoBehaviour
         return target != (transform.position = Vector3.MoveTowards(transform.position, target, animSpeed * Time.deltaTime));
     }
 
+    void DoDamage()
+    {
+        float calc_damage = enemy.curATK + BSM.PerformList[0].chosenAttack.attackDamage;
+        HeroToAttack.GetComponent<HeroStateMachine>().TakeDamage(calc_damage);
+    }
 
 }

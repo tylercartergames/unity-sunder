@@ -159,6 +159,8 @@ GameObject:
   - component: {fileID: 2585354415218836150}
   - component: {fileID: 2585354415218836148}
   - component: {fileID: 2585354415218836149}
+  - component: {fileID: 6312511347939337273}
+  - component: {fileID: -2499903749350771082}
   m_Layer: 5
   m_Name: HeroBar
   m_TagString: Untagged
@@ -175,7 +177,7 @@ RectTransform:
   m_GameObject: {fileID: 2585354415218836151}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.99, y: 0.24613874, z: 0.99}
+  m_LocalScale: {x: 0.9899999, y: 0.24613874, z: 0.9899999}
   m_Children:
   - {fileID: 2585354417069525636}
   - {fileID: 2585354415105255193}
@@ -228,6 +230,42 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &6312511347939337273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2585354415218836151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 306cc8c2b49d7114eaa3623786fc2126, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreLayout: 0
+  m_MinWidth: -1
+  m_MinHeight: -1
+  m_PreferredWidth: -1
+  m_PreferredHeight: 559.71814
+  m_FlexibleWidth: -1
+  m_FlexibleHeight: 1
+  m_LayoutPriority: 1
+--- !u!114 &-2499903749350771082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2585354415218836151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cf55b2e1c52ce640aa1741bb6b88189, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HeroName: {fileID: 2585354417069525691}
+  HeroHP: {fileID: 2585354415945433690}
+  HeroMP: {fileID: 2585354415347591740}
+  ProgressBar: {fileID: 2585354415405356525}
 --- !u!1 &2585354415347591742
 GameObject:
   m_ObjectHideFlags: 0
@@ -286,7 +324,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -438,7 +476,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -492,8 +530,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.004, y: 0.07457296}
   m_AnchorMax: {x: 0.2762911, y: 0.93600005}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1157.0925, y: -39.374084}
+  m_AnchoredPosition: {x: 0, y: -20.198}
+  m_SizeDelta: {x: 1157.0924, y: -76.50903}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2585354417069525690
 CanvasRenderer:
@@ -516,7 +554,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
