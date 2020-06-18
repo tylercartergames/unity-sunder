@@ -28,7 +28,7 @@ public class EnemyStateMachine : MonoBehaviour
     //ienumerator
     private bool actionStarted = false;
     public GameObject HeroToAttack;
-    private float animSpeed = 5f;
+    private float animSpeed = 10f;
 
 
     // Start is called before the first frame update
