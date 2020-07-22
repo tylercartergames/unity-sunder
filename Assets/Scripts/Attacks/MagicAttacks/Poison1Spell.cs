@@ -10,5 +10,6 @@ public class Poison1Spell : BaseAttack
         attackDescription = "Poison from a nonvenomous snake. ?????.";
         attackDamage = 4f;
         attackCost = 1f;
+        hitNumber = 1;
     } 
 }

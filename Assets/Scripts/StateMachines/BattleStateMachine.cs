@@ -160,14 +160,11 @@ public class BattleStateMachine : MonoBehaviour
         {
             case (HeroGUI.ACTIVATE):
             {
-                if (HerosToManage.Count > 0)
-                {
                     HerosToManage[0].transform.Find("Selector").gameObject.SetActive(true);
                     HeroChoice = new HandleTurn();
                     AttackPanel.SetActive(true);
                     CreateAttackButtons();
                     HeroInput = HeroGUI.WAITING;
-                }
 
                 break;
             }
@@ -177,7 +174,9 @@ public class BattleStateMachine : MonoBehaviour
             }
             case (HeroGUI.DONE):
             {
+
                 HeroInputDone();
+
                 break;
             }            
         }
@@ -240,12 +239,13 @@ public class BattleStateMachine : MonoBehaviour
     void HeroInputDone()
     {
         PerformList.Add(HeroChoice);
-
+        Debug.Log("This was done");
         //clean attackpanel
         ClearAttackPanel();
 
         HerosToManage[0].transform.Find("Selector").gameObject.SetActive(false);
         HerosToManage.RemoveAt(0);
+        Debug.Log("Removed [0]");
         HeroInput = HeroGUI.ACTIVATE;
     }
 

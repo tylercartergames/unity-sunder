@@ -10,5 +10,6 @@ public class Slash : BaseAttack
         attackDescription = "A quick sword slash.";
         attackDamage = 10f;
         attackCost = 0;
+        hitNumber = 1;
     }
 }

@@ -10,5 +10,6 @@ public class Fire1Spell : BaseAttack
         attackDescription = "A basic fire ball. Weak.";
         attackDamage = 10f;
         attackCost = 5f;
+        hitNumber = 1;
     } 
 }

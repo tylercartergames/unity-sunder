@@ -6,6 +6,19 @@ public class BaseUnit
 {
     public string theName;
 
+    public int charTurnNum;
+
+    public bool isDamageBuffed;
+    public float damageBuffMod;
+
+    public bool isHasted;
+    public float hasteMod;
+
+    public bool isDamageTakenIncreased;
+    public float damageTakenMod;
+
+    public float baseSPD;
+    public float curSPD;
     public float baseHP;
     public float curHP;
     public float baseMP;

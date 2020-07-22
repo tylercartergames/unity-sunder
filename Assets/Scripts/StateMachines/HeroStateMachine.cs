@@ -7,6 +7,7 @@ public class HeroStateMachine : MonoBehaviour
 {
 
     private BattleStateMachine BSM;
+    private BattleLog BL;
     public BaseHero hero;
 
     public enum TurnState
@@ -52,11 +53,13 @@ public class HeroStateMachine : MonoBehaviour
         //create panel, fill in info for corresponding hero
         CreateHeroPanel();
 
+        hero.charTurnNum = 1;
         startPosition = transform.position;
         cur_cooldown = Random.Range(0,2.5f);
         Selector.SetActive(false);
         currentState = TurnState.PROCESSING;
         BSM = GameObject.Find("BattleManager").GetComponent<BattleStateMachine>();
+        BL = GameObject.Find("BattleManager").GetComponent<BattleLog>();
 
     }
 
@@ -67,21 +70,21 @@ public class HeroStateMachine : MonoBehaviour
         {
             case (TurnState.PROCESSING):
             {
-                UpgradeProgressBar();
+
+                UpgradeProgressBar(); //only line originally in this case
 
                 break;
             }
             case (TurnState.ADDTOLIST):
             {
-                BSM.HerosToManage.Add(this.gameObject);
-                currentState = TurnState.WAITING;
+                    BSM.HerosToManage.Add(this.gameObject); 
 
+            currentState = TurnState.WAITING; //keep
                 break;
             }
             case (TurnState.WAITING):
             {   //idle state
-
-
+                 
                 break;
             }
             case (TurnState.SELECTING):
@@ -158,9 +161,16 @@ public class HeroStateMachine : MonoBehaviour
         ProgressBar.transform.localScale = new Vector3(Mathf.Clamp(calc_cooldown,0,1), ProgressBar.transform.localScale.y, ProgressBar.transform.localScale.z);
         if (cur_cooldown >= max_cooldown)
         {
-            currentState = TurnState.ADDTOLIST;
-        }
+            for (int i=0;i<BSM.HerosInBattle.Count;i++){
+                BSM.HerosInBattle[i].gameObject.GetComponent<HeroStateMachine>().currentState = HeroStateMachine.TurnState.WAITING;
+            }
+            for (int j=0;j<BSM.EnemysInBattle.Count;j++){
+                BSM.EnemysInBattle[j].gameObject.GetComponent<EnemyStateMachine>().currentState = EnemyStateMachine.TurnState.WAITING;
+            }
 
+
+            currentState = TurnState.ADDTOLIST; //keep
+        }
     }
 
     private IEnumerator TimeForAction()
@@ -191,8 +201,17 @@ public class HeroStateMachine : MonoBehaviour
             if (BSM.battleStates != BattleStateMachine.PerformAction.WIN && BSM.battleStates != BattleStateMachine.PerformAction.LOSE)
             {
                 BSM.battleStates = BattleStateMachine.PerformAction.WAIT;
-                //reset enemy state
+                //reset hero state
                 cur_cooldown = 0f;
+
+                for (int i=0;i<BSM.HerosInBattle.Count;i++){ //NEW0707 
+                    BSM.HerosInBattle[i].gameObject.GetComponent<HeroStateMachine>().currentState = HeroStateMachine.TurnState.PROCESSING; //NEW0707 
+                } //NEW0707 
+                for (int j=0;j<BSM.EnemysInBattle.Count;j++){ //NEW0707 
+                    BSM.EnemysInBattle[j].gameObject.GetComponent<EnemyStateMachine>().currentState = EnemyStateMachine.TurnState.PROCESSING; //NEW0707 
+                }      //NEW0707          
+
+
                 currentState = TurnState.PROCESSING;
             } else 
             {
@@ -225,6 +244,24 @@ public class HeroStateMachine : MonoBehaviour
         {
             float calc_damage = hero.curATK + BSM.PerformList[0].chosenAttack.attackDamage;
             EnemyToAttack.GetComponent<EnemyStateMachine>().TakeDamage(calc_damage);
+            BL.CreateText("1"+","+
+                          "0"+","+
+                          hero.charTurnNum+","+
+                          "Player"+","+
+                          hero.theName+","+
+                          EnemyToAttack.GetComponent<EnemyStateMachine>().enemy.theName+","+
+                          BSM.PerformList[0].chosenAttack.attackName+","+
+                          BSM.PerformList[0].chosenAttack.hitNumber+","+
+                          BSM.PerformList[0].chosenAttack.attackDamage+","+
+                          EnemyToAttack.GetComponent<EnemyStateMachine>().enemy.curHP+","+
+                          EnemyToAttack.GetComponent<EnemyStateMachine>().enemy.baseHP+","+
+                          hero.isHasted+","+
+                          hero.hasteMod+","+
+                          hero.isDamageBuffed+","+
+                          hero.damageBuffMod+","+
+                          hero.isDamageTakenIncreased+","+
+                          hero.damageTakenMod+"\n");
+            hero.charTurnNum++;
         }
 
 

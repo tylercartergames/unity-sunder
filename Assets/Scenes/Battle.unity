@@ -828,6 +828,7 @@ GameObject:
   m_Component:
   - component: {fileID: 656639372}
   - component: {fileID: 656639371}
+  - component: {fileID: 656639373}
   m_Layer: 0
   m_Name: BattleManager
   m_TagString: Untagged
@@ -879,6 +880,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &656639373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 656639370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25e1c44cf2bc4be42b3753e6c7fb625f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &860643052
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -992,6 +1005,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 5108906087591981028, guid: a785c584311926341828496419b72683,
         type: 3}
+    - target: {fileID: 5871109415003603865, guid: 6a484530188a92d43a4edeb84b176297,
+        type: 3}
+      propertyPath: cur_cooldown
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5871109415003603868, guid: 6a484530188a92d43a4edeb84b176297,
         type: 3}
       propertyPath: m_Name

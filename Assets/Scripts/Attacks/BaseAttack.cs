@@ -9,4 +9,5 @@ public class BaseAttack : MonoBehaviour
     public string attackDescription;
     public float attackDamage;
     public float attackCost;
+    public int hitNumber;
 }

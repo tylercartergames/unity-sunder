@@ -10,5 +10,6 @@ public class HammerSwing : BaseAttack
         attackDescription = "A simple hammer swing.";
         attackDamage = 15f;
         attackCost = 0;
+        hitNumber = 1;
     }
 }

@@ -1,0 +1,7 @@
+Combat_ID,Total_Turn_Number,Character_Turn_Number,Player_Or_NPC,ATTACKER,TARGET,MOVE,Hit_Number,Damage_or_Healing,Targets_Current_HP,Target Max HP,Hasted_Flag,Haste_Value,Damage_Buff_Flag,Damage_Buff_Value,Target_damage_Taken_increase_flag,Target_damage_Taken_increase_amount 
+1,0,1,Player,Hero 1,Enemy 1,Slash,1,10,95,120,False,0,False,0,False,0
+1,0,1,Enemy,Enemy 1,Hero 2,Slash,1,10,192,210,False,0,False,0,False,0
+1,0,1,Player,Hero 1,Enemy 1,Slash,1,10,95,120,False,0,False,0,False,0
+1,0,1,Enemy,Enemy 1,Hero 1,Slash,1,10,182,200,False,0,False,0,False,0
+1,0,1,Player,Hero 2,Enemy 2,Poison1,1,4,99,115,False,0,False,0,False,0
+1,0,1,Enemy,Enemy 2,Hero 2,Slash,1,10,195,210,False,0,False,0,False,0
