@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &4311563787991550210
+--- !u!1 &77214343835429726
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,22 +8,22 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1006882205048442054}
-  - component: {fileID: 537722830051915136}
+  - component: {fileID: 6459307145997652461}
+  - component: {fileID: 5747862459446782473}
   m_Layer: 0
-  m_Name: Fire1
+  m_Name: Curse
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1006882205048442054
+--- !u!4 &6459307145997652461
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4311563787991550210}
+  m_GameObject: {fileID: 77214343835429726}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -31,25 +31,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &537722830051915136
+--- !u!114 &5747862459446782473
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4311563787991550210}
+  m_GameObject: {fileID: 77214343835429726}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 995ad317bb50b8a4082fe016c36e8049, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackName: Fire1
-  attackDescription: A basic fire ball. Weak.
-  attackDamage: 10
-  attackCost: 5
+  attackName: Curse
+  attackDescription: Basic DoT Fill in Variables
+  attackDamage: 0
+  attackCost: 0
   hitNumber: 1
   baseAttackAnimation: 0
   hasStatusEffect: 1
-  debuffTickAmount: 4
-  debuffRoundDuration: 3
-  debuffName: Fire1 DoT
+  debuffTickAmount: 2
+  debuffRoundDuration: 10
+  debuffName: Curse

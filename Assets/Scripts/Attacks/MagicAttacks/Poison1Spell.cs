@@ -11,5 +11,9 @@ public class Poison1Spell : BaseAttack
         attackDamage = 4f;
         attackCost = 1f;
         hitNumber = 1;
+        hasStatusEffect = true;
+        debuffTickAmount = 1;
+        debuffRoundDuration = 5;
+        debuffName = "Poison1 DoT";
     } 
 }

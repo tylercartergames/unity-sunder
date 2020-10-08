@@ -23,4 +23,5 @@ public class BaseEnemy : BaseUnit
 
     public Type EnemyType;
     public Rarity rarity;
+    public int ai;
 }

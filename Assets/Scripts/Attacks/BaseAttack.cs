@@ -10,4 +10,10 @@ public class BaseAttack : MonoBehaviour
     public float attackDamage;
     public float attackCost;
     public int hitNumber;
+    public float baseAttackAnimation;
+    public bool hasStatusEffect;
+    public int debuffTickAmount;
+    public int debuffRoundDuration;
+    public string debuffName;
+
 }

@@ -11,5 +11,9 @@ public class Fire1Spell : BaseAttack
         attackDamage = 10f;
         attackCost = 5f;
         hitNumber = 1;
+        hasStatusEffect = true;
+        debuffTickAmount = 4;
+        debuffRoundDuration = 3;
+        debuffName = "Fire1 DoT";
     } 
 }

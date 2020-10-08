@@ -1,0 +1,1157 @@
+fileFormatVersion: 2
+guid: 73d05fe07ef8d5f49a4fac02e2b26a27
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4762215580708134270
+    second: QuinnSpriteSheet_0
+  - first:
+      213: -8945258228082686434
+    second: QuinnSpriteSheet_1
+  - first:
+      213: 490727364259067971
+    second: QuinnSpriteSheet_2
+  - first:
+      213: -6599015720999140875
+    second: QuinnSpriteSheet_3
+  - first:
+      213: -8566842634425410618
+    second: QuinnSpriteSheet_4
+  - first:
+      213: 9047443127804026141
+    second: QuinnSpriteSheet_5
+  - first:
+      213: -8068631077680235771
+    second: QuinnSpriteSheet_6
+  - first:
+      213: 1579683794129417674
+    second: QuinnSpriteSheet_7
+  - first:
+      213: 9112417603735811320
+    second: QuinnSpriteSheet_8
+  - first:
+      213: 3178776958246540264
+    second: QuinnSpriteSheet_9
+  - first:
+      213: -7427967328994218057
+    second: QuinnSpriteSheet_10
+  - first:
+      213: 5709232269129911062
+    second: QuinnSpriteSheet_11
+  - first:
+      213: -246474218247910061
+    second: QuinnSpriteSheet_12
+  - first:
+      213: 1307571176444685140
+    second: QuinnSpriteSheet_13
+  - first:
+      213: -6735182076367997082
+    second: QuinnSpriteSheet_14
+  - first:
+      213: -7334463460888040617
+    second: QuinnSpriteSheet_15
+  - first:
+      213: -8656678958685025996
+    second: QuinnSpriteSheet_16
+  - first:
+      213: -3837671005012537001
+    second: QuinnSpriteSheet_17
+  - first:
+      213: -3412677561169172550
+    second: QuinnSpriteSheet_18
+  - first:
+      213: -8290631941828170932
+    second: QuinnSpriteSheet_19
+  - first:
+      213: -2613322774286615996
+    second: QuinnSpriteSheet_20
+  - first:
+      213: 5488391988972847754
+    second: QuinnSpriteSheet_21
+  - first:
+      213: 7785908879369534751
+    second: QuinnSpriteSheet_22
+  - first:
+      213: -7692980456163364616
+    second: QuinnSpriteSheet_23
+  - first:
+      213: -2909942961660016165
+    second: QuinnSpriteSheet_24
+  - first:
+      213: -840667300794506433
+    second: QuinnSpriteSheet_25
+  - first:
+      213: 6582610160585159411
+    second: QuinnSpriteSheet_26
+  - first:
+      213: -8592128742616543199
+    second: QuinnSpriteSheet_27
+  - first:
+      213: -1200797610711303784
+    second: QuinnSpriteSheet_28
+  - first:
+      213: 1793480023956089899
+    second: QuinnSpriteSheet_29
+  - first:
+      213: -3692637994523340141
+    second: QuinnSpriteSheet_30
+  - first:
+      213: -1909643051723710138
+    second: QuinnSpriteSheet_31
+  - first:
+      213: 2458741867462151639
+    second: QuinnSpriteSheet_32
+  - first:
+      213: -482891548143807288
+    second: QuinnSpriteSheet_33
+  - first:
+      213: 7322013181470318045
+    second: QuinnSpriteSheet_34
+  - first:
+      213: 6457368114446289606
+    second: QuinnSpriteSheet_35
+  - first:
+      213: -8919709988699634236
+    second: QuinnSpriteSheet_36
+  - first:
+      213: -8192889707643745136
+    second: QuinnSpriteSheet_37
+  - first:
+      213: 5238985269979803145
+    second: QuinnSpriteSheet_38
+  - first:
+      213: -5414240176230116156
+    second: QuinnSpriteSheet_0
+  - first:
+      213: 2955102678726918940
+    second: QuinnSpriteSheet_1
+  - first:
+      213: -3319367394362201148
+    second: QuinnSpriteSheet_2
+  - first:
+      213: 8756856800662592987
+    second: QuinnSpriteSheet_3
+  - first:
+      213: 4645564733933888143
+    second: QuinnSpriteSheet_4
+  - first:
+      213: 3276752999368256564
+    second: QuinnSpriteSheet_5
+  - first:
+      213: 7392587354116631577
+    second: QuinnSpriteSheet_6
+  - first:
+      213: -7476556548667100881
+    second: QuinnSpriteSheet_7
+  - first:
+      213: 5102703930239377435
+    second: QuinnSpriteSheet_8
+  - first:
+      213: 6088603569408460238
+    second: QuinnSpriteSheet_9
+  - first:
+      213: -3889612532873502508
+    second: QuinnSpriteSheet_10
+  - first:
+      213: -7493538085311205758
+    second: QuinnSpriteSheet_11
+  - first:
+      213: -5638125216621815709
+    second: QuinnSpriteSheet_12
+  - first:
+      213: -3791331951688918724
+    second: QuinnSpriteSheet_13
+  - first:
+      213: 150581773905124576
+    second: QuinnSpriteSheet_14
+  - first:
+      213: -1891777549922771886
+    second: QuinnSpriteSheet_15
+  - first:
+      213: 4090867976956494234
+    second: QuinnSpriteSheet_16
+  - first:
+      213: -5889544287347482317
+    second: QuinnSpriteSheet_17
+  - first:
+      213: -979748005568080871
+    second: QuinnSpriteSheet_18
+  - first:
+      213: 5420026593035703761
+    second: QuinnSpriteSheet_19
+  - first:
+      213: 7702991357632303030
+    second: QuinnSpriteSheet_20
+  - first:
+      213: 5645194446505807123
+    second: QuinnSpriteSheet_21
+  - first:
+      213: -1090082227585672861
+    second: QuinnSpriteSheet_22
+  - first:
+      213: 8594116287600576572
+    second: QuinnSpriteSheet_23
+  - first:
+      213: 2824312999734924755
+    second: QuinnSpriteSheet_24
+  - first:
+      213: -8216632841009228072
+    second: QuinnSpriteSheet_25
+  - first:
+      213: 1045642690098810906
+    second: QuinnSpriteSheet_26
+  - first:
+      213: -7262872965289773063
+    second: QuinnSpriteSheet_27
+  - first:
+      213: 2171117990124128440
+    second: QuinnSpriteSheet_28
+  - first:
+      213: 3995756492105014595
+    second: QuinnSpriteSheet_29
+  - first:
+      213: -873444689539217739
+    second: QuinnSpriteSheet_30
+  - first:
+      213: 1620379274885391254
+    second: QuinnSpriteSheet_31
+  - first:
+      213: 6799720997502094523
+    second: QuinnSpriteSheet_32
+  - first:
+      213: -871551074691802740
+    second: QuinnSpriteSheet_33
+  - first:
+      213: -6828574447844137199
+    second: QuinnSpriteSheet_34
+  - first:
+      213: -8380055755375493716
+    second: QuinnSpriteSheet_35
+  - first:
+      213: -4063277951427112184
+    second: QuinnSpriteSheet_36
+  - first:
+      213: 8568033047419965015
+    second: QuinnSpriteSheet_37
+  - first:
+      213: 349356834509839633
+    second: QuinnSpriteSheet_38
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: QuinnSpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 0
+        width: 93
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c4d72fde31ccd4b0800000000000000
+      internalID: -5414240176230116156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QuinnSpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 0
+        width: 93
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c13c250ca32a20920800000000000000
+      internalID: 2955102678726918940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QuinnSpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 0
+        width: 93
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cbe60c01fc3fe1d0800000000000000
+      internalID: -3319367394362201148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QuinnSpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 0
+        width: 93
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdd15784dda968970800000000000000
+      internalID: 8756856800662592987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QuinnSpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 0
+        width: 93
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f822633238c587040800000000000000
+      internalID: 4645564733933888143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QuinnSpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 0
+        width: 97
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43c6a00fd7d597d20800000000000000
+      internalID: 3276752999368256564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QuinnSpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 78
+        width: 64
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91caa2de70fb79660800000000000000
+      internalID: 7392587354116631577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QuinnSpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 1182
+        y: 78
+        width: 64
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f21b3957e6fed3890800000000000000
+      internalID: -7476556548667100881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QuinnSpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 1261
+        y: 0
+        width: 97
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1068e3703270d640800000000000000
+      internalID: 5102703930239377435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QuinnSpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 0
+        width: 93
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec544c400b01f7450800000000000000
+      internalID: 6088603569408460238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QuinnSpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 1457
+        y: 0
+        width: 93
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d0ea286202550ac0800000000000000
+      internalID: -3889612532873502508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QuinnSpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 1554
+        y: 0
+        width: 93
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28e2a2a50da910890800000000000000
+      internalID: -7493538085311205758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QuinnSpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 1651
+        y: 0
+        width: 93
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3689510dcfa51c1b0800000000000000
+      internalID: -5638125216621815709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QuinnSpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 1748
+        y: 0
+        width: 93
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c395ef16dab726bc0800000000000000
+      internalID: -3791331951688918724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QuinnSpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 1845
+        y: 0
+        width: 93
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ec53475359f61200800000000000000
+      internalID: 150581773905124576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QuinnSpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 39
+        width: 92
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25c5bc6675e0fb5e0800000000000000
+      internalID: -1891777549922771886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QuinnSpriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 55
+        width: 64
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a91438d20cea5c830800000000000000
+      internalID: 4090867976956494234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QuinnSpriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 55
+        width: 64
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 331e8bfbca2244ea0800000000000000
+      internalID: -5889544287347482317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QuinnSpriteSheet_18
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 39
+        width: 92
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91497be316c3762f0800000000000000
+      internalID: -979748005568080871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QuinnSpriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 47
+        width: 57
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d55017487dc73b40800000000000000
+      internalID: 5420026593035703761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QuinnSpriteSheet_20
+      rect:
+        serializedVersion: 2
+        x: 1095
+        y: 47
+        width: 57
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bfc39bd3d586ea60800000000000000
+      internalID: 7702991357632303030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QuinnSpriteSheet_21
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 15
+        width: 79
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31d8cf78072c75e40800000000000000
+      internalID: 5645194446505807123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QuinnSpriteSheet_22
+      rect:
+        serializedVersion: 2
+        x: 697
+        y: 36
+        width: 48
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3691ac05dff3fd0f0800000000000000
+      internalID: -1090082227585672861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QuinnSpriteSheet_23
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 36
+        width: 48
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c38c4d0ea3f644770800000000000000
+      internalID: 8594116287600576572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QuinnSpriteSheet_24
+      rect:
+        serializedVersion: 2
+        x: 1173
+        y: 15
+        width: 79
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d5d7bb95b9f13720800000000000000
+      internalID: 2824312999734924755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QuinnSpriteSheet_25
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 27
+        width: 29
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d616d5f6f7a8fd80800000000000000
+      internalID: -8216632841009228072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QuinnSpriteSheet_26
+      rect:
+        serializedVersion: 2
+        x: 1103
+        y: 27
+        width: 29
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a10d2519c7ed28e00800000000000000
+      internalID: 1045642690098810906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QuinnSpriteSheet_27
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 14
+        width: 32
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f77d17b487153b90800000000000000
+      internalID: -7262872965289773063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QuinnSpriteSheet_28
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 8
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b80fc61f4c512e10800000000000000
+      internalID: 2171117990124128440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QuinnSpriteSheet_29
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 9
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34d51e0fb57c37730800000000000000
+      internalID: 3995756492105014595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QuinnSpriteSheet_30
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 11
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b6401dbea6e0e3f0800000000000000
+      internalID: -873444689539217739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QuinnSpriteSheet_31
+      rect:
+        serializedVersion: 2
+        x: 958
+        y: 0
+        width: 49
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 693e2f88d5ebc7610800000000000000
+      internalID: 1620379274885391254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QuinnSpriteSheet_32
+      rect:
+        serializedVersion: 2
+        x: 1203
+        y: 14
+        width: 32
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbc80e388367d5e50800000000000000
+      internalID: 6799720997502094523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QuinnSpriteSheet_33
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 0
+        width: 33
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c89926d4ae0a7e3f0800000000000000
+      internalID: -871551074691802740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QuinnSpriteSheet_34
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 0
+        width: 33
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 117e0f118b70c31a0800000000000000
+      internalID: -6828574447844137199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QuinnSpriteSheet_35
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 0
+        width: 33
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cad30ee90bf04bb80800000000000000
+      internalID: -8380055755375493716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QuinnSpriteSheet_36
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 0
+        width: 33
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80392893b365c97c0800000000000000
+      internalID: -4063277951427112184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QuinnSpriteSheet_37
+      rect:
+        serializedVersion: 2
+        x: 1071
+        y: 0
+        width: 33
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75e464749a4c7e670800000000000000
+      internalID: 8568033047419965015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QuinnSpriteSheet_38
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 0
+        width: 33
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11d50d4a03a29d400800000000000000
+      internalID: 349356834509839633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

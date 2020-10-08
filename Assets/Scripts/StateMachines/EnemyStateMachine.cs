@@ -174,7 +174,11 @@ public class EnemyStateMachine : MonoBehaviour
 
         yield return new WaitForSeconds(0.5f);
         
+        //Use a move
         DoDamage();
+
+        //Check/Apply Status Effects
+        
 
         Vector3 firstPosition = startPosition;
         while(MoveTowardsStart(firstPosition))

@@ -47,3 +47,9 @@ MonoBehaviour:
   attackDescription: Poison from a nonvenomous snake. ?????.
   attackDamage: 4
   attackCost: 1
+  hitNumber: 1
+  baseAttackAnimation: 0
+  hasStatusEffect: 1
+  debuffTickAmount: 1
+  debuffRoundDuration: 5
+  debuffName: Poison1 DoT

@@ -175,6 +175,12 @@ public class HeroStateMachine : MonoBehaviour
 
     private IEnumerator TimeForAction()
         {
+            //check if they have a status
+            //do damage from any statuses
+            // yield return new WaitForSeconds(.5f);
+
+
+
             if (actionStarted)
             {
                 yield break;
@@ -187,8 +193,15 @@ public class HeroStateMachine : MonoBehaviour
                 yield return null;
             }
 
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(.5f);
+
+            //Attack function
             DoDamage();
+
+            //Check/Do Status Effects
+            
+            //Do Animation
+            
 
             Vector3 firstPosition = startPosition;
             while(MoveTowardsStart(firstPosition))
@@ -204,12 +217,12 @@ public class HeroStateMachine : MonoBehaviour
                 //reset hero state
                 cur_cooldown = 0f;
 
-                for (int i=0;i<BSM.HerosInBattle.Count;i++){ //NEW0707 
-                    BSM.HerosInBattle[i].gameObject.GetComponent<HeroStateMachine>().currentState = HeroStateMachine.TurnState.PROCESSING; //NEW0707 
-                } //NEW0707 
-                for (int j=0;j<BSM.EnemysInBattle.Count;j++){ //NEW0707 
-                    BSM.EnemysInBattle[j].gameObject.GetComponent<EnemyStateMachine>().currentState = EnemyStateMachine.TurnState.PROCESSING; //NEW0707 
-                }      //NEW0707          
+                for (int i=0;i<BSM.HerosInBattle.Count;i++){ 
+                    BSM.HerosInBattle[i].gameObject.GetComponent<HeroStateMachine>().currentState = HeroStateMachine.TurnState.PROCESSING; 
+                } 
+                for (int j=0;j<BSM.EnemysInBattle.Count;j++){ 
+                    BSM.EnemysInBattle[j].gameObject.GetComponent<EnemyStateMachine>().currentState = EnemyStateMachine.TurnState.PROCESSING;
+                }           
 
 
                 currentState = TurnState.PROCESSING;
@@ -242,8 +255,36 @@ public class HeroStateMachine : MonoBehaviour
 
         void DoDamage()
         {
+            if (EnemyToAttack.GetComponent<EnemyStateMachine>().enemy.debuffs.Count == 0){
+                EnemyToAttack.GetComponent<EnemyStateMachine>().enemy.isDebuffed = false;
+            }
             float calc_damage = hero.curATK + BSM.PerformList[0].chosenAttack.attackDamage;
             EnemyToAttack.GetComponent<EnemyStateMachine>().TakeDamage(calc_damage);
+
+            //check if enemy is alive after initial ability hit before worrying about dots on the enemy
+            if (EnemyToAttack.GetComponent<EnemyStateMachine>().enemy.curHP > 0){
+
+                print (BSM.PerformList[0].chosenAttack.debuffRoundDuration);
+
+                if (BSM.PerformList[0].chosenAttack.hasStatusEffect || EnemyToAttack.GetComponent<EnemyStateMachine>().enemy.isDebuffed){
+
+                    BaseStatusEffect newStatusEffect = new BaseStatusEffect();
+                    newStatusEffect.effectName = BSM.PerformList[0].chosenAttack.debuffName;
+                    newStatusEffect.effectRoundDuration = BSM.PerformList[0].chosenAttack.debuffRoundDuration;
+                    newStatusEffect.effectTickAmount = BSM.PerformList[0].chosenAttack.debuffTickAmount;
+
+                    for (int j=0;j<EnemyToAttack.GetComponent<EnemyStateMachine>().enemy.debuffs.Count;j++){
+                        if (string.Equals(EnemyToAttack.GetComponent<EnemyStateMachine>().enemy.debuffs[j].effectName,newStatusEffect.effectName)){
+                            //Remove so we can apply with new calc
+                            EnemyToAttack.GetComponent<EnemyStateMachine>().enemy.debuffs.Remove(newStatusEffect);
+                        }
+                    }
+                    
+                    ApplyStatus(newStatusEffect);
+                    DoStatus();
+                    
+                }
+            }
             BL.CreateText("1"+","+
                           "0"+","+
                           hero.charTurnNum+","+
@@ -262,6 +303,36 @@ public class HeroStateMachine : MonoBehaviour
                           hero.isDamageTakenIncreased+","+
                           hero.damageTakenMod+"\n");
             hero.charTurnNum++;
+        }
+
+        void ApplyStatus(BaseStatusEffect status)
+        {
+            status.statusEffectCaster = GameObject.Find(hero.theName);
+            
+            EnemyToAttack.GetComponent<EnemyStateMachine>().enemy.debuffs.Add(status);
+            EnemyToAttack.GetComponent<EnemyStateMachine>().enemy.isDebuffed = true;
+        }
+
+        void DoStatus()
+        {
+            int tempDoT;
+            GameObject caster = GameObject.Find(hero.theName);
+
+            for (int i=0; i<EnemyToAttack.GetComponent<EnemyStateMachine>().enemy.debuffs.Count;i++){
+
+                if (EnemyToAttack.GetComponent<EnemyStateMachine>().enemy.debuffs[i].statusEffectCaster == caster){
+                    tempDoT = EnemyToAttack.GetComponent<EnemyStateMachine>().enemy.debuffs[i].effectTickAmount;
+                    if (EnemyToAttack.GetComponent<EnemyStateMachine>().enemy.debuffs[i].effectRoundDuration == 0){
+                        EnemyToAttack.GetComponent<EnemyStateMachine>().enemy.debuffs.RemoveAt(i);
+                    }
+                    else {
+                        EnemyToAttack.GetComponent<EnemyStateMachine>().TakeDamage(tempDoT);
+                        EnemyToAttack.GetComponent<EnemyStateMachine>().enemy.debuffs[i].effectRoundDuration--;
+                        print("Dot Duration: " + EnemyToAttack.GetComponent<EnemyStateMachine>().enemy.debuffs[i].effectRoundDuration);
+                    }
+
+                }
+            }
         }
 
 
